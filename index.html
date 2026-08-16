@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Centre d'ophtalmologie Dr Salhi Oussama | Ophtalmologue à Mostaganem</title>
+
+  <meta name="description" content="Centre d'ophtalmologie Dr Salhi Oussama à Mostaganem. Consultation ophtalmologique spécialisée, OCT, glaucome, rétinopathie diabétique, kératocône, sécheresse oculaire, cataracte et laser argon.">
+
+  <meta name="keywords" content="ophtalmologue Mostaganem, centre ophtalmologie Mostaganem, médecin yeux Mostaganem, طبيب عيون مستغانم, أحسن طبيب عيون في مستغانم, Dr Salhi Oussama">
+
+  <meta name="author" content="Dr Salhi Oussama">
+
+  <meta property="og:title" content="Centre d'ophtalmologie Dr Salhi Oussama - Mostaganem">
+  <meta property="og:description" content="Centre d'ophtalmologie spécialisé à Mostaganem : consultation, OCT, glaucome, rétine, cornée, sécheresse oculaire, cataracte et laser argon.">
+  <meta property="og:type" content="website">
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: #1f2937;
+      background: #f7fafc;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #0f4c5c;
+      color: white;
+      padding: 18px 20px;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    .header-content {
+      max-width: 1100px;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .logo {
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .logo span {
+      display: block;
+      font-size: 14px;
+      font-weight: normal;
+      margin-top: 2px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 18px;
+      font-size: 14px;
+    }
+
+    .hero {
+      background: white;
+      padding: 70px 20px;
+      text-align: center;
+    }
+
+    .hero h1 {
+      color: #0f4c5c;
+      font-size: 38px;
+      margin-bottom: 10px;
+    }
+
+    .hero h2 {
+      font-size: 22px;
+      font-weight: normal;
+      color: #475569;
+      margin-top: 0;
+    }
+
+    .hero p {
+      max-width: 750px;
+      margin: 20px auto;
+      font-size: 17px;
+    }
+
+    .buttons {
+      margin-top: 30px;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 13px 22px;
+      margin: 5px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .button-primary {
+      background: #0f4c5c;
+      color: white;
+    }
+
+    .button-secondary {
+      background: #e8f1f3;
+      color: #0f4c5c;
+    }
+
+    section {
+      padding: 55px 20px;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    h2.section-title {
+      text-align: center;
+      color: #0f4c5c;
+      font-size: 30px;
+      margin-bottom: 35px;
+    }
+
+    .intro {
+      max-width: 850px;
+      margin: auto;
+      text-align: center;
+      font-size: 17px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 3px 15px rgba(0,0,0,0.06);
+    }
+
+    .card h3 {
+      color: #0f4c5c;
+      margin-top: 0;
+    }
+
+    .equipment {
+      background: #eef6f7;
+    }
+
+    .equipment ul {
+      max-width: 800px;
+      margin: auto;
+      columns: 2;
+      padding-left: 25px;
+    }
+
+    .equipment li {
+      margin-bottom: 10px;
+    }
+
+    .arabic {
+      direction: rtl;
+      text-align: right;
+      background: white;
+    }
+
+    .arabic p,
+    .arabic li {
+      font-size: 17px;
+    }
+
+    .contact {
+      background: #0f4c5c;
+      color: white;
+      text-align: center;
+    }
+
+    .contact h2 {
+      color: white;
+    }
+
+    .contact a {
+      color: white;
+      font-weight: bold;
+    }
+
+    footer {
+      background: #092f38;
+      color: white;
+      text-align: center;
+      padding: 25px 20px;
+      font-size: 14px;
+    }
+
+    @media (max-width: 700px) {
+      .header-content {
+        flex-direction: column;
+      }
+
+      nav a {
+        margin: 0 7px;
+      }
+
+      .hero h1 {
+        font-size: 30px;
+      }
+
+      .equipment ul {
+        columns: 1;
+      }
+    }
+  </style>
+
+  <!-- Données structurées pour aider les moteurs de recherche à comprendre le centre -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MedicalBusiness",
+    "name": "Centre d'ophtalmologie Dr Salhi Oussama",
+    "description": "Centre d'ophtalmologie spécialisé à Mostaganem.",
+    "medicalSpecialty": "Ophthalmology",
+    "telephone": "+213553586693",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "64 Villas Militaires N°08",
+      "addressLocality": "Mostaganem",
+      "addressCountry": "DZ"
+    },
+    "areaServed": [
+      "Mostaganem",
+      "Mascara",
+      "Saida"
+    ]
+  }
+  </script>
+
+</head>
+
+<body>
+
+<header>
+  <div class="header-content">
+    <div class="logo">
+      Centre d'ophtalmologie Dr Salhi Oussama
+      <span>Ophtalmologue à Mostaganem</span>
+    </div>
+
+    <nav>
+      <a href="#services">Services</a>
+      <a href="#equipements">Équipements</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <section class="hero">
+    <h1>Centre d'ophtalmologie Dr Salhi Oussama</h1>
+
+    <h2>Ophtalmologue à Mostaganem</h2>
+
+    <p>
+      Centre d'ophtalmologie proposant une consultation spécialisée
+      et approfondie ainsi que des explorations ophtalmologiques
+      modernes pour le suivi et la prise en charge des principales
+      maladies oculaires.
+    </p>
+
+    <div class="buttons">
+      <a class="button button-primary" href="tel:+213553586693">
+        Appeler le 0553 58 66 93
+      </a>
+
+      <a class="button button-secondary"
+         href="https://www.google.com/maps/search/?api=1&query=64+Villas+Militaires+N08+Mostaganem">
+        Voir l'itinéraire
+      </a>
+    </div>
+  </section>
+
+
+  <section id="services">
+    <div class="container">
+
+      <h2 class="section-title">
+        Nos domaines de prise en charge
+      </h2>
+
+      <div class="cards">
+
+        <div class="card">
+          <h3>Consultation ophtalmologique</h3>
+          <p>
+            Consultation spécialisée et approfondie,
+            bilan visuel et exploration adaptée aux besoins
+            de chaque patient.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Correction optique</h3>
+          <p>
+            Correction de la vision et adaptation des lunettes
+            ou des lentilles de contact.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Sécheresse oculaire</h3>
+          <p>
+            Évaluation de la sécheresse oculaire et prise en charge
+            moderne des troubles de la surface oculaire.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Kératocône</h3>
+          <p>
+            Surveillance et exploration de la cornée dans le cadre
+            du kératocône.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Glaucome</h3>
+          <p>
+            Exploration et suivi du glaucome avec les examens
+            ophtalmologiques adaptés.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Rétinopathie diabétique</h3>
+          <p>
+            Surveillance ophtalmologique des patients diabétiques
+            et exploration de la rétine.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Cataracte</h3>
+          <p>
+            Évaluation de la cataracte et prise en charge chirurgicale
+            lorsque celle-ci est indiquée.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Laser argon</h3>
+          <p>
+            Traitements au laser argon dans les indications
+            ophtalmologiques appropriées.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <section id="equipements" class="equipment">
+
+    <div class="container">
+
+      <h2 class="section-title">
+        Explorations et équipements
+      </h2>
+
+      <p class="intro">
+        Le centre dispose d'équipements permettant de réaliser
+        différentes explorations ophtalmologiques spécialisées.
+      </p>
+
+      <br>
+
+      <ul>
+        <li>OCT maculaire et papillaire</li>
+        <li>OCT du segment antérieur</li>
+        <li>Topographie cornéenne</li>
+        <li>Champ visuel automatisé</li>
+        <li>Échographie oculaire A/B</li>
+        <li>Auto-réfractométrie</li>
+        <li>Auto-réfractomètre pédiatrique SW800</li>
+        <li>Tonométrie de Goldmann</li>
+        <li>Biomicroscopie à la lampe à fente</li>
+      </ul>
+
+    </div>
+
+  </section>
+
+
+  <section>
+    <div class="container">
+
+      <h2 class="section-title">
+        Le Centre d'ophtalmologie
+      </h2>
+
+      <p class="intro">
+        Situé à Mostaganem, le Centre d'ophtalmologie Dr Salhi Oussama
+        accueille les patients de Mostaganem ainsi que les patients
+        venant des wilayas voisines et les visiteurs de passage.
+      </p>
+
+      <p class="intro">
+        Le centre met l'accent sur une consultation approfondie,
+        l'utilisation d'examens complémentaires lorsque ceux-ci
+        sont indiqués et une prise en charge adaptée à chaque patient.
+      </p>
+
+    </div>
+  </section>
+
+
+  <section class="arabic" dir="rtl">
+
+    <div class="container">
+
+      <h2 class="section-title">
+        مركز طب العيون الدكتور صالحي أسامة
+      </h2>
+
+      <p class="intro">
+        مركز متخصص في طب العيون بمدينة مستغانم، يقدم فحوصات
+        واستشارات متخصصة ومعمقة مع الاعتماد على وسائل استكشاف
+        حديثة في طب العيون.
+      </p>
+
+      <div class="cards">
+
+        <div class="card">
+          <h3>الاستشارة المتخصصة</h3>
+          <p>
+            فحص شامل ومتخصص للعين وتقييم الحالة البصرية
+            حسب احتياجات كل مريض.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>جفاف العين</h3>
+          <p>
+            تشخيص وتكفل حديث باضطرابات سطح العين وجفاف العين.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>القرنية المخروطية</h3>
+          <p>
+            متابعة القرنية المخروطية واستكشاف القرنية.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>الزرق واعتلال الشبكية السكري</h3>
+          <p>
+            متابعة الزرق ومرضى السكري واستكشاف الشبكية
+            حسب الحالة.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>الكتاراكت والليزر</h3>
+          <p>
+            تقييم الكتاراكت والتكفل الجراحي عند الحاجة،
+            بالإضافة إلى العلاج بالليزر في الحالات المناسبة.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>أجهزة حديثة</h3>
+          <p>
+            OCT، تخطيط القرنية، مجال البصر الآلي،
+            إيكوغرافي A/B وجهاز قياس النظر للأطفال SW800.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <section id="contact" class="contact">
+
+    <div class="container">
+
+      <h2>Contact et localisation</h2>
+
+      <p>
+        <strong>Centre d'ophtalmologie Dr Salhi Oussama</strong>
+      </p>
+
+      <p>
+        64 Villas Militaires N°08<br>
+        En face de l'Université Ines Zaghloul<br>
+        Mostaganem, Algérie
+      </p>
+
+      <p>
+        Fixe :
+        <a href="tel:+21340360193">
+          040 36 01 93
+        </a>
+      </p>
+
+      <p>
+        Mobile :
+        <a href="tel:+213553586693">
+          0553 58 66 93
+        </a>
+      </p>
+
+      <div class="buttons">
+
+        <a class="button button-secondary"
+           href="https://www.google.com/maps/search/?api=1&query=64+Villas+Militaires+N08+Mostaganem">
+          Ouvrir Google Maps
+        </a>
+
+        <a class="button button-secondary"
+           href="tel:+213553586693">
+          Appeler le centre
+        </a>
+
+      </div>
+
+    </div>
+
+  </section>
+
+</main>
+
+
+<footer>
+
+  © Centre d'ophtalmologie Dr Salhi Oussama —
+  Mostaganem, Algérie
+
+</footer>
+
+</body>
+</html>
