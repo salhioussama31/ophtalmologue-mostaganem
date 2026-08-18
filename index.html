@@ -38,7 +38,7 @@
     header {
       background: #0f4c5c;
       color: white;
-      padding: 12px 20px;
+      padding: 8px 20px;
       position: sticky;
       top: 0;
       z-index: 10;
@@ -52,15 +52,15 @@
       align-items: center;
       gap: 20px;
       flex-wrap: wrap;
-      padding-bottom: 12px;
-      border-bottom: 1px solid rgba(255,255,255,0.1);
+      padding-bottom: 8px;
+      border-bottom: 1px solid rgba(255,255,255,0.08);
     }
 
     .header-contact {
       display: flex;
-      gap: 15px;
+      gap: 12px;
       align-items: center;
-      font-size: 13px;
+      font-size: 12px;
     }
 
     .header-contact a {
@@ -68,75 +68,87 @@
       text-decoration: none;
       display: flex;
       align-items: center;
-      gap: 5px;
-      font-weight: bold;
-      transition: opacity 0.2s;
+      gap: 4px;
+      font-weight: 500;
+      transition: opacity 0.2s ease;
     }
 
     .header-contact a:hover {
-      opacity: 0.8;
+      opacity: 0.75;
     }
 
     .phone-number {
       display: inline-flex;
       align-items: center;
-      gap: 5px;
+      gap: 4px;
+      white-space: nowrap;
+    }
+
+    .phone-icon {
+      font-size: 11px;
     }
 
     .social-icons {
       display: flex;
-      gap: 12px;
+      gap: 10px;
       align-items: center;
+      justify-content: center;
     }
 
     .social-icon {
-      width: 28px;
-      height: 28px;
+      width: 40px;
+      height: 40px;
       display: flex;
       align-items: center;
       justify-content: center;
       text-decoration: none;
-      color: white;
-      font-size: 16px;
+      color: inherit;
       border-radius: 4px;
-      transition: background-color 0.2s;
+      transition: opacity 0.2s ease;
+      padding: 0;
+      border: none;
+      background: transparent;
+      cursor: pointer;
     }
 
     .social-icon:hover {
-      background-color: rgba(255,255,255,0.2);
+      opacity: 0.75;
     }
 
-    .social-icon.facebook { background-color: #1877F2; }
-    .social-icon.instagram { background-color: #E4405F; }
-    .social-icon.tiktok { background-color: #000000; }
-    .social-icon.whatsapp { background-color: #25D366; }
+    .social-icon svg {
+      width: 20px;
+      height: 20px;
+      display: block;
+    }
 
     .language-selector {
       display: flex;
-      gap: 8px;
+      gap: 6px;
       align-items: center;
-      font-size: 13px;
+      font-size: 12px;
     }
 
     .language-selector a {
       color: white;
       text-decoration: none;
-      padding: 4px 8px;
-      border-radius: 3px;
-      transition: background-color 0.2s;
+      padding: 2px 6px;
+      border-radius: 2px;
+      transition: background-color 0.2s ease;
+      white-space: nowrap;
     }
 
     .language-selector a:hover {
-      background-color: rgba(255,255,255,0.2);
+      background-color: rgba(255,255,255,0.1);
     }
 
     .language-selector a.active {
-      background-color: rgba(255,255,255,0.3);
-      font-weight: bold;
+      background-color: rgba(255,255,255,0.15);
+      font-weight: 500;
     }
 
     .language-separator {
-      color: rgba(255,255,255,0.5);
+      color: rgba(255,255,255,0.4);
+      font-weight: 300;
     }
 
     .header-content {
@@ -308,56 +320,75 @@
     @media (max-width: 900px) {
       .header-top {
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
         gap: 10px;
-        padding-bottom: 10px;
-      }
-
-      .header-contact {
-        width: 100%;
-        justify-content: space-between;
-        flex-wrap: wrap;
-      }
-
-      .language-selector {
-        width: 100%;
-        justify-content: flex-start;
-      }
-    }
-
-    @media (max-width: 700px) {
-      .header-top {
-        flex-direction: column;
-        align-items: flex-start;
         padding-bottom: 8px;
       }
 
       .header-contact {
         width: 100%;
-        flex-direction: column;
-        gap: 8px;
-        font-size: 12px;
-      }
-
-      .phone-number {
-        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
       }
 
       .social-icons {
         width: 100%;
-        gap: 10px;
-      }
-
-      .social-icon {
-        width: 32px;
-        height: 32px;
-        font-size: 18px;
       }
 
       .language-selector {
         width: 100%;
-        gap: 6px;
-        font-size: 12px;
+        justify-content: center;
+      }
+    }
+
+    @media (max-width: 700px) {
+      header {
+        padding: 8px 16px;
+      }
+
+      .header-top {
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+        padding-bottom: 8px;
+      }
+
+      .header-contact {
+        width: 100%;
+        justify-content: center;
+        gap: 10px;
+        font-size: 11px;
+      }
+
+      .phone-number {
+        flex-shrink: 0;
+      }
+
+      .social-icons {
+        width: 100%;
+        gap: 8px;
+        justify-content: center;
+      }
+
+      .social-icon {
+        width: 42px;
+        height: 42px;
+      }
+
+      .social-icon svg {
+        width: 22px;
+        height: 22px;
+      }
+
+      .language-selector {
+        width: 100%;
+        justify-content: center;
+        gap: 5px;
+        font-size: 11px;
+      }
+
+      .language-selector a {
+        padding: 2px 4px;
       }
 
       .header-content {
@@ -438,36 +469,60 @@
   <div class="header-top">
     <div class="header-contact">
       <div class="phone-number">
-        <span>☎️</span>
+        <span class="phone-icon">☎</span>
         <a href="tel:+2135553586693" aria-label="Appeler le numéro principal">+213 555 358 6693</a>
       </div>
       <div class="phone-number">
-        <span>📱</span>
+        <span class="phone-icon">📞</span>
         <a href="tel:+21340360193" aria-label="Appeler le numéro secondaire">+213 40 36 01 93</a>
       </div>
     </div>
 
     <div class="social-icons">
       <a href="https://www.facebook.com/share/1Ry6My8mrt/" 
-         class="social-icon facebook" 
+         class="social-icon" 
          target="_blank" 
          rel="noopener noreferrer" 
-         aria-label="Facebook">f</a>
+         aria-label="Facebook" 
+         title="Facebook">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M18 2h-3a6 6 0 0 0-6 6v4a6 6 0 0 0 6 6h3v4a2 2 0 0 1-2 2h-3a8 8 0 0 1-8-8v-4a8 8 0 0 1 8-8h3a2 2 0 0 1 2 2z"></path>
+          <rect x="2" y="2" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"/>
+          <circle cx="12" cy="12" r="3" fill="white" stroke="none"/>
+        </svg>
+      </a>
       <a href="https://www.instagram.com/dr_salhi_oussama_?igsh=N2Rud3Zzdmc5enY4" 
-         class="social-icon instagram" 
+         class="social-icon" 
          target="_blank" 
          rel="noopener noreferrer" 
-         aria-label="Instagram">📷</a>
+         aria-label="Instagram" 
+         title="Instagram">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+          <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+          <circle cx="17.5" cy="6.5" r="1.5"></circle>
+        </svg>
+      </a>
       <a href="https://www.tiktok.com/@dr_salhi_oussama_opht?_r=1&_t=ZS-98z5BDltp1l" 
-         class="social-icon tiktok" 
+         class="social-icon" 
          target="_blank" 
          rel="noopener noreferrer" 
-         aria-label="TikTok">🎵</a>
+         aria-label="TikTok" 
+         title="TikTok">
+        <svg viewBox="0 0 24 24" fill="currentColor">
+          <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.1 1.82 2.89 2.89 0 0 1 5.1-1.82V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-.96-.1z"/>
+        </svg>
+      </a>
       <a href="https://wa.me/2135553586693" 
-         class="social-icon whatsapp" 
+         class="social-icon" 
          target="_blank" 
          rel="noopener noreferrer" 
-         aria-label="WhatsApp">💬</a>
+         aria-label="WhatsApp" 
+         title="WhatsApp">
+        <svg viewBox="0 0 24 24" fill="currentColor">
+          <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.67-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.076 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421-7.403h-.004a9.87 9.87 0 00-5.031 1.378c-1.872 1.114-3.073 2.747-3.268 4.595-.511 5.834 4.181 10.322 9.833 10.322h.001c1.895 0 3.695-.45 5.338-1.329l.381-.214 3.915 1.027-.995-3.845.245-.39a9.35 9.35 0 001.563-5.834c-.034-1.659-.418-3.230-1.232-4.581-.844-1.44-2.115-2.856-3.806-3.78-1.691-1.01-3.506-1.549-5.541-1.549z"/>
+        </svg>
+      </a>
     </div>
 
     <div class="language-selector">
