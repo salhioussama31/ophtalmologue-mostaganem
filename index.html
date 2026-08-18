@@ -7,15 +7,20 @@
 
   <title>Centre d'ophtalmologie Dr Salhi Oussama | Ophtalmologue à Mostaganem</title>
 
-  <meta name="description" content="Centre d'ophtalmologie Dr Salhi Oussama à Mostaganem. Consultation spécialisée, diagnostic et prise en charge de la sécheresse oculaire (OS1000, ACTIVA), OCT, glaucome, rétinopathie diabétique, kératocône, pachymétrie, topographie et chirurgie moderne de la cataracte par phacoémulsification.">
+  <meta name="description" content="Centre d'ophtalmologie Dr Salhi Oussama à Mostaganem. Consultation spécialisée, diagnostic et prise en charge de la sécheresse oculaire (OS1000, ACTIVA), OCT, glaucome, rétinopathie diabétique, kératocône.">
 
-  <meta name="keywords" content="ophtalmologue Mostaganem, ophtalmologue à Mostaganem, centre d'ophtalmologie Mostaganem, Dr Salhi Oussama, OCT Mostaganem, glaucome, rétinopathie diabétique, kératocône, sécheresse oculaire, cataracte, phacoémulsification, PlexR, pachymétrie cornéenne, topographie cornéenne">
+  <meta name="keywords" content="ophtalmologue Mostaganem, ophtalmologue à Mostaganem, centre d'ophtalmologie Mostaganem, Dr Salhi Oussama, OCT Mostaganem, glaucome, rétinopathie diabétique, kératocône.">
 
   <meta name="author" content="Dr Salhi Oussama">
 
   <meta property="og:title" content="Centre d'ophtalmologie Dr Salhi Oussama - Mostaganem">
   <meta property="og:description" content="Centre d'ophtalmologie spécialisé à Mostaganem : consultation, OCT, glaucome, rétine, cornée, sécheresse oculaire, cataracte et laser argon.">
   <meta property="og:type" content="website">
+
+  <link rel="alternate" hreflang="fr" href="/" />
+  <link rel="alternate" hreflang="ar" href="/ar/" />
+  <link rel="alternate" hreflang="en" href="/en/" />
+  <link rel="alternate" hreflang="x-default" href="/" />
 
   <style>
     * {
@@ -33,10 +38,105 @@
     header {
       background: #0f4c5c;
       color: white;
-      padding: 18px 20px;
+      padding: 12px 20px;
       position: sticky;
       top: 0;
       z-index: 10;
+    }
+
+    .header-top {
+      max-width: 1100px;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      padding-bottom: 12px;
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+
+    .header-contact {
+      display: flex;
+      gap: 15px;
+      align-items: center;
+      font-size: 13px;
+    }
+
+    .header-contact a {
+      color: white;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      font-weight: bold;
+      transition: opacity 0.2s;
+    }
+
+    .header-contact a:hover {
+      opacity: 0.8;
+    }
+
+    .phone-number {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    .social-icons {
+      display: flex;
+      gap: 12px;
+      align-items: center;
+    }
+
+    .social-icon {
+      width: 28px;
+      height: 28px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      color: white;
+      font-size: 16px;
+      border-radius: 4px;
+      transition: background-color 0.2s;
+    }
+
+    .social-icon:hover {
+      background-color: rgba(255,255,255,0.2);
+    }
+
+    .social-icon.facebook { background-color: #1877F2; }
+    .social-icon.instagram { background-color: #E4405F; }
+    .social-icon.tiktok { background-color: #000000; }
+    .social-icon.whatsapp { background-color: #25D366; }
+
+    .language-selector {
+      display: flex;
+      gap: 8px;
+      align-items: center;
+      font-size: 13px;
+    }
+
+    .language-selector a {
+      color: white;
+      text-decoration: none;
+      padding: 4px 8px;
+      border-radius: 3px;
+      transition: background-color 0.2s;
+    }
+
+    .language-selector a:hover {
+      background-color: rgba(255,255,255,0.2);
+    }
+
+    .language-selector a.active {
+      background-color: rgba(255,255,255,0.3);
+      font-weight: bold;
+    }
+
+    .language-separator {
+      color: rgba(255,255,255,0.5);
     }
 
     .header-content {
@@ -205,9 +305,64 @@
       font-size: 14px;
     }
 
+    @media (max-width: 900px) {
+      .header-top {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        padding-bottom: 10px;
+      }
+
+      .header-contact {
+        width: 100%;
+        justify-content: space-between;
+        flex-wrap: wrap;
+      }
+
+      .language-selector {
+        width: 100%;
+        justify-content: flex-start;
+      }
+    }
+
     @media (max-width: 700px) {
+      .header-top {
+        flex-direction: column;
+        align-items: flex-start;
+        padding-bottom: 8px;
+      }
+
+      .header-contact {
+        width: 100%;
+        flex-direction: column;
+        gap: 8px;
+        font-size: 12px;
+      }
+
+      .phone-number {
+        width: 100%;
+      }
+
+      .social-icons {
+        width: 100%;
+        gap: 10px;
+      }
+
+      .social-icon {
+        width: 32px;
+        height: 32px;
+        font-size: 18px;
+      }
+
+      .language-selector {
+        width: 100%;
+        gap: 6px;
+        font-size: 12px;
+      }
+
       .header-content {
         flex-direction: column;
+        gap: 12px;
       }
 
       nav a {
@@ -230,7 +385,7 @@
     "@context": "https://schema.org",
     "@type": "MedicalClinic",
     "name": "Centre d'ophtalmologie Dr Salhi Oussama",
-    "description": "Centre d'ophtalmologie spécialisé à Mostaganem. Consultation, diagnostic et prise en charge de la sécheresse oculaire (OS1000, ACTIVA), OCT, glaucome, rétinopathie diabétique, kératocône, pachymétrie, topographie et chirurgie de la cataracte par phacoémulsification.",
+    "description": "Centre d'ophtalmologie spécialisé à Mostaganem. Consultation, diagnostic et prise en charge de la sécheresse oculaire (OS1000, ACTIVA), OCT, glaucome, rétinopathie diabétique.",
     "medicalSpecialty": "Ophthalmology",
     "telephone": "+2135553586693",
     "contactPoint": [
@@ -266,6 +421,11 @@
       { "@type": "Service", "name": "Kératocône" },
       { "@type": "Service", "name": "Chirurgie de la cataracte par phacoémulsification" },
       { "@type": "Service", "name": "Traitement des verrues et lésions palpébrales par PlexR" }
+    ],
+    "sameAs": [
+      "https://www.facebook.com/share/1Ry6My8mrt/",
+      "https://www.instagram.com/dr_salhi_oussama_?igsh=N2Rud3Zzdmc5enY4",
+      "https://www.tiktok.com/@dr_salhi_oussama_opht?_r=1&_t=ZS-98z5BDltp1l"
     ]
   }
   </script>
@@ -275,6 +435,50 @@
 <body>
 
 <header>
+  <div class="header-top">
+    <div class="header-contact">
+      <div class="phone-number">
+        <span>☎️</span>
+        <a href="tel:+2135553586693" aria-label="Appeler le numéro principal">+213 555 358 6693</a>
+      </div>
+      <div class="phone-number">
+        <span>📱</span>
+        <a href="tel:+21340360193" aria-label="Appeler le numéro secondaire">+213 40 36 01 93</a>
+      </div>
+    </div>
+
+    <div class="social-icons">
+      <a href="https://www.facebook.com/share/1Ry6My8mrt/" 
+         class="social-icon facebook" 
+         target="_blank" 
+         rel="noopener noreferrer" 
+         aria-label="Facebook">f</a>
+      <a href="https://www.instagram.com/dr_salhi_oussama_?igsh=N2Rud3Zzdmc5enY4" 
+         class="social-icon instagram" 
+         target="_blank" 
+         rel="noopener noreferrer" 
+         aria-label="Instagram">📷</a>
+      <a href="https://www.tiktok.com/@dr_salhi_oussama_opht?_r=1&_t=ZS-98z5BDltp1l" 
+         class="social-icon tiktok" 
+         target="_blank" 
+         rel="noopener noreferrer" 
+         aria-label="TikTok">🎵</a>
+      <a href="https://wa.me/2135553586693" 
+         class="social-icon whatsapp" 
+         target="_blank" 
+         rel="noopener noreferrer" 
+         aria-label="WhatsApp">💬</a>
+    </div>
+
+    <div class="language-selector">
+      <a href="/" class="active" aria-label="Français">🇫🇷 FR</a>
+      <span class="language-separator">|</span>
+      <a href="/ar/" aria-label="العربية">العربية</a>
+      <span class="language-separator">|</span>
+      <a href="/en/" aria-label="English">🇬🇧 EN</a>
+    </div>
+  </div>
+
   <div class="header-content">
     <div class="logo">
       Centre d'ophtalmologie Dr Salhi Oussama
