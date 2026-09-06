@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://salhioussama31.github.io/ophtalmologue-mostaganem/sitemap.xml
